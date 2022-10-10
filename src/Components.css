@@ -1,0 +1,9 @@
+.iconCart {
+    list-style-type: none;
+}
+
+.titulo-bienvenida {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 50px;
+}
