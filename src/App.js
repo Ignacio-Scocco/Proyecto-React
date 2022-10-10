@@ -7,7 +7,7 @@ function App() {
   return (
     <div>
       <NavBar/>
-      <ItemListContainer/>
+      <ItemListContainer msg="Bienvenidos a la mejor tienda de Deportes!"/>
     </div>
   );
 }
