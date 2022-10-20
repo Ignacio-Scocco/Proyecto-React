@@ -1,27 +1,33 @@
-
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
 import CartIcon from './CartWidget';
 function NavBar () {
     return (
-        <Navbar bg="light" expand="lg">
-        <Container>
-            <Navbar.Brand href="#home">Tienda de deportes</Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
-                <Nav.Link href="#home">Home</Nav.Link>
-                <Nav.Link href="#Us">Nosotros</Nav.Link>
-                <Nav.Link href="#Contact">Contacto</Nav.Link>
-                <Nav.Link href="#Product">Productos</Nav.Link>
-            </Nav>
-            <li className='iconCart'>
-                <CartIcon/>
-            </li>
-        </Navbar.Collapse>
-        </Container>
-    </Navbar>
+        <div className="bg-sky-400 dark:bg-gray-400 shadow text-white ">
+            <nav className='md:flex md:items-center md:justify-between'>
+                <div className="flex justify-between items-center">
+                <span className="text-xl font-mono mx-4 p-5 font-['monaco'] cursor-pointer"> 
+                Bootstart</span>
+
+            
+                </div>
+
+                <ul className='md:flex md:items-center z-[-1] bg-sky-400 md:bg-sky-400 dark:bg-gray-400 md:dark:bg-gray-400 md:z-auto md:static absolute w-full left-0 md:w-auto py-5 md:pl-0 pl-7'>
+                    <li className = "text-xl sm:text-gray hover:text-cyan-800 duration-500 mx-4 my-4 md:my-0">
+                        <a href="" >Productos</a>
+                    </li>
+                    <li className = "text-xl hover:text-cyan-800 duration-500 my-4 mx-4 md:my-0">
+                        <a href="" >Sobre Nosotros</a>
+                    </li>
+                    <li className = "text-xl hover:text-cyan-800 duration-500 my-4 mx-4 md:my-0">
+                        <a href="">Contacto</a>
+                    </li>
+                    <li className = "text-xl hover:text-cyan-800 duration-500 my-4 mx-4 md:my-0 ">
+                        <CartIcon />
+                    </li>
+                    
+                </ul>
+            </nav>
+
+        </div>
     )
 }
 

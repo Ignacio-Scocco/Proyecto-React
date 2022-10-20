@@ -1,0 +1,74 @@
+[
+    {
+        "id": "1",
+        "marca": "Nike",
+        "modelo": "Nike Streetgato",
+        "precio":"$41250",
+        "img":"https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/59d30eac-1364-4d22-9312-016a4f11857a/react-gato-indoor-court-soccer-shoes-7rKX9f.png",
+        "stock":10
+    },
+    {
+        "id": "2",
+        "marca": "Nike",
+        "modelo": "Nike Lunar Gato",
+        "precio":"$50000",
+        "img":"https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/a1157eb5-71b7-46cc-9a51-9e895fc76c91/lunar-gato-ii-ic-indoor-court-soccer-shoes-qqTAoz9v.png",
+        "stock":15
+    },
+    {
+        "id": "3",
+        "marca": "Nike",
+        "modelo": "Nike React Gato",
+        "precio":"$40000",
+        "img":"https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/cabc31f5-9ea1-4d4a-897f-6ad02765092f/streetgato-soccer-shoes-9WSHKM.png",
+        "stock":18
+    },
+    {
+        "id": "4",
+        "marca": "Adidas",
+        "modelo": "Predator Edge",
+        "precio":"$45000",
+        "img":"https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/b8348414431b47a5be7fae9b00eed6f4_9366/predator-edge.3-indoor-shoes.jpg",
+        "stock":20
+    },
+    {
+        "id": "5",
+        "marca": "Adidas",
+        "modelo": "X Speedportal ",
+        "precio":"$48000",
+        "img":"https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/05df605b4c1b4970936fae9e010635da_9366/x-speedportal.3-indoor-shoes.jpg",
+        "stock":15
+    },
+    {
+        "id": "6",
+        "marca": "Adidas",
+        "modelo": "Copa Sense ",
+        "precio":"$38000",
+        "img":"https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/eee7331d224f4b3d9fc5ae9e0125ac26_9366/copa-sense.3-indoor-shoes.jpg",
+        "stock":30
+    },
+    {
+        "id": "7",
+        "marca": "Munich",
+        "modelo": "Gresca",
+        "precio":"$28000",
+        "img":"https://dhb3yazwboecu.cloudfront.net/180/MUNICH-SS20-GRESCA-300606-L2-S.jpg",
+        "stock":24
+    },
+    {
+        "id": "8",
+        "marca": "Munich",
+        "modelo": "Continental 821",
+        "precio":"$22000",
+        "img":"https://dhb3yazwboecu.cloudfront.net/180/4100821-2019-L-S.jpg",
+        "stock":12
+    },
+    {
+        "id": "9",
+        "marca": "Munich",
+        "modelo": "One Indoor 49",
+        "precio":"$20000",
+        "img":"https://dhb3yazwboecu.cloudfront.net/180/V5/SPORTS/3071048-01-S.jpg",
+        "stock":11
+    }
+]
