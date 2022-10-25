@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 import Item from "./Item";
 
 
@@ -6,6 +7,7 @@ export default function ItemList(){
 
 const [cartas, setCartas] = useState("");
 const [loading, isLoading] = useState(false)
+const {categoria} = useParams();
 
   //Obtencion JSON
 const listado = () => {
@@ -32,22 +34,35 @@ useEffect(() => {
 
     return ( 
         <div className="flex flex-wrap justify-between">
-            {loading ?  cartas.map((el)=>(
+            {!loading ?  cartas
+            : categoria ? cartas
+            .filter((marca) => marca.categoria === categoria)
+            .map((element)=>(
         <div>
-                {console.log(el)}
             <Item 
-            key={el.id}
-            marca={el.marca}
-            modelo={el.modelo}
-            precio={el.precio}
-            img = {el.img}
-            stock={el.stock}
+            key={element.id}
+            marca={element.marca}
+            modelo={element.modelo}
+            precio={element.precio}
+            img = {element.img}
+            stock={element.stock}
             
 
             />
         </div>
         ))
-    :"loading"}
+    : cartas
+    .map((element) => (
+        <Item
+        key={element.id}
+        marca={element.marca}
+        modelo={element.modelo}
+        precio={element.precio}
+        img = {element.img}
+        categoria= {element.categoria}
+        stock={element.stock}
+        />
+    ))}
         </div>
 
     );
