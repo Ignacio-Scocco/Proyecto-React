@@ -1,5 +1,5 @@
 
-import cart from "../components/assets/cart.svg"
+import cart from "../assets/cart.svg"
 
 function CartWidget () {
     return (
