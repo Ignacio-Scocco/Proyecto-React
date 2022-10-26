@@ -19,11 +19,6 @@ function ItemDetail(props) {
                     <div className="flex items-center mt-2.5 mb-5">
                         <span className="bg-blue-100 text-blue-800 text-s font-semibold mt-5 mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">Modelo: {props.modelo}</span>
                     </div>
-                    <div className="flex justify-between items-center mb-4">
-                        <span className="text-1xl font-bold text-gray-900 dark:text-white">Autor: </span> 
-                        <span className="text-1xl text-gray-900 dark:text-white mr-10">{props.autor}</span> 
-                    </div>
-
                     </div>
                     <span className="text-white font-bold"> Precio : {props.valor} </span>
                 <ItemCount stock={props.stock}/>

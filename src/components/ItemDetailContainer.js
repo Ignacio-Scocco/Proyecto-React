@@ -9,7 +9,7 @@ function ItemDetailContainer() {
     const [cartas, setCartas] = useState("");
     const [loading, isLoading] = useState(true)
 
-  //SIMULACION API
+
 const getItem = () => {
     let items = require("../components/productos.json")
     return new Promise ((resolve, reject) => {
@@ -30,12 +30,11 @@ useEffect(() => {
     fetchedItems()
 }, []);
 
-// Implementar mock invocando a getItem() y utilizando el resolver then
     return(
 
     
         <div className="md:flex justify-start ml-10 h-[100vh] ">   
-        {loading ? cartas : cartas
+        {!loading ? cartas : cartas
             .filter((marca) => marca.id.includes(marcaID))
             .map((element)=>(
 
