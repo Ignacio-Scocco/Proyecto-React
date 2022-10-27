@@ -5,8 +5,8 @@ import { useState, useEffect } from "react";
 
 
 function ItemDetailContainer() {
-    const {marcaID} = useParams();
-    const [cartas, setCartas] = useState("");
+    const {botinID} = useParams();
+    const [cartas, setCartas] = useState({});
     const [loading, isLoading] = useState(true)
 
 
@@ -24,7 +24,8 @@ const getItem = () => {
 useEffect(() => {
     async function fetchedItems(){
         const items = await getItem(); 
-        setCartas(items)
+        const itemSeleccionado = items.find(item => item.id === botinID)
+        setCartas(itemSeleccionado)
     }
 
     fetchedItems()
@@ -34,21 +35,17 @@ useEffect(() => {
 
     
         <div className="md:flex justify-start ml-10 h-[100vh] ">   
-        {!loading ? cartas : cartas
-            .filter((marca) => marca.id.includes(marcaID))
-            .map((element)=>(
 
             <ItemDetail 
-            key={element.id}
-            marca={element.marca}
-            modelo={element.modelo}
-            precio={element.precio}
-            img = {element.img}
-            stock={element.stock}
-            categoria = {element.categoria}
+            key={cartas.id}
+            marca={cartas.marca}
+            modelo={cartas.modelo}
+            precio={cartas.precio}
+            img = {cartas.img}
+            stock={cartas.stock}
+            categoria = {cartas.categoria}
 
             />
-        ))}
         </div>
 
     );

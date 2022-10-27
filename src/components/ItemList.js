@@ -41,6 +41,7 @@ useEffect(() => {
         <div>
             <Item 
             key={element.id}
+            id={element.id}
             marca={element.marca}
             modelo={element.modelo}
             precio={element.precio}
@@ -55,6 +56,7 @@ useEffect(() => {
     .map((element) => (
         <Item
         key={element.id}
+        id={element.id}
         marca={element.marca}
         modelo={element.modelo}
         precio={element.precio}
